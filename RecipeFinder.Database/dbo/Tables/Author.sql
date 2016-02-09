@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Author]
+(
+	[AuthorId] INT NOT NULL PRIMARY KEY CLUSTERED,
+	[Name] VARCHAR(64) NOT NULL,
+	[Description] VARCHAR(256) NOT NULL	
+);
