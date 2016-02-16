@@ -31,5 +31,19 @@ namespace RecipeFinder.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<RecipeFinder.Models.Author> Authors { get; set; }
+
+        public System.Data.Entity.DbSet<RecipeFinder.Models.Action> Actions { get; set; }
+
+        public System.Data.Entity.DbSet<RecipeFinder.Models.Food> Foods { get; set; }
+
+        public System.Data.Entity.DbSet<RecipeFinder.Models.FoodGroup> FoodGroups { get; set; }
+
+        public System.Data.Entity.DbSet<RecipeFinder.Models.Ingredient> Ingredients { get; set; }
+
+        public System.Data.Entity.DbSet<RecipeFinder.Models.Recipe> Recipes { get; set; }
+
+        public System.Data.Entity.DbSet<RecipeFinder.Models.Unit> Units { get; set; }
     }
 }

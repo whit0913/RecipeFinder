@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="48b8ae18df6943a980ca418df82ca223" Name="Diagram1">
+        <EntityTypeShape EntityType="RecipeFinderModel.Action" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeFinderModel.Author" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeFinderModel.Food" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeFinderModel.FoodGroup" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeFinderModel.Ingredient" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeFinderModel.Recipe" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeFinderModel.RecipeProcess" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeFinderModel.Unit" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="RecipeFinderModel.FK_RecipeProcess_ActionId" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeFinderModel.FK_Recipe_AuthorId" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeFinderModel.FK_Food_FoodGroupId" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeFinderModel.FK_Ingredient_FoodId" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeFinderModel.FK_Ingredient_RecipeId" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeFinderModel.FK_Ingredient_UnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeFinderModel.FK_RecipeProcess_IngredientId" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeFinderModel.FK_RecipeProcess_RecipeId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
